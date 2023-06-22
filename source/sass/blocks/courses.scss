@@ -1,0 +1,27 @@
+.courses {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 60px 140px;
+}
+
+.courses__title {
+  margin: 40px 0 80px;
+  padding: 0;
+  text-align: center;
+  color: #43258E;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.courses__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.courses__img {
+  object-fit: cover;
+  margin-right: 50px;
+
+   &:last-child {
+    margin-right: 0;
+   }
+}

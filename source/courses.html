@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
+  <meta name="description" content="">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
@@ -17,9 +17,9 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <nav class="header__nav nav">
+      <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item  nav__item--current">
+          <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
@@ -31,7 +31,7 @@
           <li class="nav__item">
             <a class="nav__link" href="education.html">Образование</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item--current">
             <a class="nav__link" href="courses.html">Профессиональные курсы</a>
           </li>
           <li class="nav__item">
@@ -41,32 +41,12 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden ">Резюме</h1>
-      <section class="info">
-        <h2 class="info__title">Надежда Худякова</h2>
-        <img class="info__img" src="img/photo.jpg" width="311" height="598" alt="Моё фото.">
-        <p>31 год, родилась 15 июля 1991 года</p>
-        <span>Ульяновск</span>
-      </section>
-      <section class="work">
-        <h2 class="work__info">Ищу работу</h2>
-        <p>от 15 до 30 ₽</p>
-        <div class="work__time">
-          <p>Полный рабочий день, неполный рабочий день</p>
-        </div>
-        <div class="work__additionally">
-          <p>
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 2.5L5.28571 7L11 1" stroke="#101A56" />
-            </svg>
-            Готов к стажировке
-          </p>
-          <p>
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 2.5L5.28571 7L11 1" stroke="#101A56" />
-            </svg>
-            Готов к удалённой работе
-          </p>
+      <section class="courses">
+        <h1 class="courses__title">Профессиональные курсы HTML Academy</h1>
+        <div class="courses__wrapper">
+          <img class="courses__img" src="img/1.jpg" width="370" height="479" alt="Сертификат 1.">
+          <img class="courses__img" src="img/2.jpg" width="370" height="479" alt="Сертификат 2.">
+          <img class="courses__img" src="img/3.jpg" width="370" height="479" alt="Сертификат 3.">
         </div>
       </section>
     </main>
@@ -142,9 +122,6 @@
       </div>
     </footer>
   </div>
-
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
 </body>
 
 </html>

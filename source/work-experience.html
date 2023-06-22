@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
+  <meta name="description" content="">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
@@ -17,15 +17,15 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <nav class="header__nav nav">
+      <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item  nav__item--current">
+          <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="about-me.html">О себе</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item--current">
             <a class="nav__link" href="work-experience.html">Опыт работы</a>
           </li>
           <li class="nav__item">
@@ -35,38 +35,81 @@
             <a class="nav__link" href="courses.html">Профессиональные курсы</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="projects.html">Проекты</a>
+            <a class="nav__link" href="#projects.html">Проекты</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden ">Резюме</h1>
-      <section class="info">
-        <h2 class="info__title">Надежда Худякова</h2>
-        <img class="info__img" src="img/photo.jpg" width="311" height="598" alt="Моё фото.">
-        <p>31 год, родилась 15 июля 1991 года</p>
-        <span>Ульяновск</span>
-      </section>
-      <section class="work">
-        <h2 class="work__info">Ищу работу</h2>
-        <p>от 15 до 30 ₽</p>
-        <div class="work__time">
-          <p>Полный рабочий день, неполный рабочий день</p>
+      <section class="experience">
+        <h1 class="experience__title">Опыт работы: 3 месяца</h1>
+        <div class="experience__menu">
+          <ul class="evenodd__list">
+            <li class="experience__item">
+              март — май 2023
+              (3 месяца)
+            </li>
+            <li class="experience__item">
+              Акселератор HTML Academy
+              <p>Стажёр фронтенд-разработчик</p>
+            </li>
+            <li class="experience__item">
+              Удалённая стажировка
+            </li>
+          </ul>
         </div>
-        <div class="work__additionally">
+        <div class="experience__description">
           <p>
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 2.5L5.28571 7L11 1" stroke="#101A56" />
-            </svg>
-            Готов к стажировке
+            Удалённая стажировка, выполнение проектов по критериям компании. Работа в команде разработчиков, менеджера
+            проекта и тестировщика.
           </p>
+        </div>
+        <div class="experience__technologies technologies">
           <p>
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 2.5L5.28571 7L11 1" stroke="#101A56" />
-            </svg>
-            Готов к удалённой работе
+            Во время работы на проектами использовала следующие технологии:
           </p>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              HTML
+            </li>
+            <li class="technologies__item">
+              CSS, SCSS, SASS
+            </li>
+            <li class="technologies__item">
+              GULP, Webpack
+            </li>
+            <li class="technologies__item">
+              JS(ES5)
+            </li>
+            <li class="technologies__item">
+              BEM
+            </li>
+            <li class="technologies__item">
+              Git, Github
+            </li>
+            <li class="technologies__item">
+              Figma
+            </li>
+          </ul>
+        </div>
+        <div class="experience__criteria criteria">
+          <p>
+            В проектах, в зависимости от ТЗ необходимо было:
+          </p>
+          <ul class="criteria__list">
+            <li class="criteria__item">
+              соблюдать критерии качества;
+            </li>
+            <li class="criteria__item">
+              поддерживать разные версии браузеров;
+            </li>
+            <li class="criteria__item">
+              создавать интерактивные блоки (табы, слайдеры и т.д.);
+            </li>
+            <li class="criteria__item">
+              выполнять правки по замечаниям тестировщика.
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -142,9 +185,6 @@
       </div>
     </footer>
   </div>
-
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
 </body>
 
 </html>
