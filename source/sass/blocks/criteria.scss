@@ -1,0 +1,21 @@
+.criteria p {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.criteria__list {
+  margin: 15px 0 25px 27px;
+  padding: 0;
+}
+
+.criteria__item {
+  margin: 4px 0 0;
+  font-weight: 500;
+}
