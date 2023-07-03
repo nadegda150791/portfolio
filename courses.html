@@ -16,26 +16,39 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="about-me.html">О себе</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="work-experience.html">Опыт работы</a>
-          </li>
-          <li class="nav__item nav__item--current">
-            <a class="nav__link" href="courses.html">Профессиональные курсы</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="projects.html">Портфолио</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header" data-header>
+      <div class="header__wrapper">
+        <div class="header__overlay" data-close-menu></div>
+        <nav class="header__nav nav">
+          <ul class="header__list">
+            <li class="header__item  header__item--current">
+              <a class="header__link" href="index.html" data-close-menu>Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="about-me.html" data-close-menu>О себе</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="work-experience.html" data-close-menu>Опыт работы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="courses.html" data-close-menu>Профессиональные курсы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="projects.html" data-close-menu>Портфолио</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__burger" type="button" aria-label="Переключатель меню" data-burger>
+          <svg class="header__burger-text" width="24" height="14" viewBox="0 0 24 14" aria-label="Открыть меню"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H24M0 7H24M0 13H24" stroke="#F9FBFD" stroke-width="2" />
+          </svg>
+          <svg class="header__burger-icon" width="15" height="15" viewBox="0 0 15 15" aria-label="Закрыть меню"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L7.5 7.5M14 14L7.5 7.5M7.5 7.5L14 1L1 14" stroke="#011C40" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="courses">
