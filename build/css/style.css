@@ -1378,6 +1378,7 @@ button,
     -webkit-transform: translateX(-15px);
         -ms-transform: translateX(-15px);
             transform: translateX(-15px);
+    max-width: 200px;
   }
 }
 .header__item--current {
@@ -1400,7 +1401,7 @@ button,
 .header__link {
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
   color: #1e303f;
   display: inline-block;
   cursor: pointer;
@@ -1666,6 +1667,12 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 800px;
+}
+@media (max-width: 1199px) {
+  .footer__list {
+    max-width: 550px;
+  }
 }
 @media (max-width: 767px) {
   .footer__list {
@@ -1736,6 +1743,7 @@ button,
   margin: 0;
   padding: 0;
   text-align: center;
+  max-width: 200px;
 }
 
 .social__item {
@@ -1784,7 +1792,7 @@ button,
 .courses {
   max-width: 1200px;
   margin: auto;
-  padding: 40px 60px 140px;
+  padding: 40px 60px 120px;
 }
 @media (max-width: 1199px) {
   .courses {
@@ -1839,6 +1847,8 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .courses__wrapper {
@@ -1853,6 +1863,7 @@ button,
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 50px;
+  margin-bottom: 20px;
 }
 .courses__img:last-child {
   margin-right: 0;
@@ -2159,7 +2170,7 @@ button,
   }
 }
 
-.evenodd__list {
+.experience__list {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -2170,7 +2181,7 @@ button,
           justify-content: space-between;
 }
 @media (max-width: 850px) {
-  .evenodd__list {
+  .experience__list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr 1fr;
@@ -2179,7 +2190,7 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .evenodd__list {
+  .experience__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2276,7 +2287,7 @@ button,
   height: 1px;
   top: 10px;
   left: -15px;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .criteria p {
